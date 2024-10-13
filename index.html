@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@dalatilacerda</title>
+    <!-- Fonte opcional para melhorar a tipografia -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <style>
+        /* Reset básico para remover margens e paddings padrão */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fonte global */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #000; /* Fundo preto */
+            color: #fff; /* Texto branco */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Container principal */
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        /* Seção de perfil */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #fff; /* Borda branca ao redor da foto */
+        }
+
+        .profile h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .profile p {
+            font-size: 1em;
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+
+        /* Botões de link */
+        .links .link-button {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 10px auto;
+            padding: 15px 20px;
+            background-color: #fff; /* Fundo branco */
+            color: #000; /* Texto preto */
+            text-decoration: none;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 10px; /* Bordas arredondadas */
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .links .link-button:hover {
+            background-color: #000; /* Fundo preto no hover */
+            color: #fff; /* Texto branco no hover */
+            border: 2px solid #fff;
+        }
+
+        /* Responsividade para dispositivos menores */
+        @media (max-width: 500px) {
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+            }
+
+            .profile h1 {
+                font-size: 1.5em;
+            }
+
+            .links .link-button {
+                font-size: 1em;
+                padding: 12px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="sua-foto.jpg" alt="Sua Foto" class="profile-pic">
+            <h1>Dalati Lacerda</h1>
+            <p>Um pouco mais sobre mim...</p>
+        </div>
+        <div class="links">
+            <a href="https://www.seusite.com" class="link-button" target="_blank">Seu Site</a>
+            <a href="https://www.instagram.com/seuusuario" class="link-button" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com/seuusuario" class="link-button" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/in/seuusuario" class="link-button" target="_blank">LinkedIn</a>
+            <!-- Adicione mais links conforme necessário -->
+        </div>
+    </div>
+</body>
+</html>
